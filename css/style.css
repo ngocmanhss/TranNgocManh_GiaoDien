@@ -1,0 +1,553 @@
+/* CSS cho header */
+header {
+    background-color: #0f0101; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 20px; /* Khoảng cách lề bên trong */
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử */
+    justify-content: space-between; /* Các phần tử con được căn giữa và căn giữa */
+    align-items: center; /* Các phần tử con được căn giữa theo chiều dọc */
+}
+
+/* CSS cho logo và menu */
+.logo-menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px; /* Khoảng cách giữa logo và menu */
+}
+
+.logo img {
+    max-width: 100px; /* Điều chỉnh kích thước logo */
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul ul {
+    display: none;
+    position: absolute;
+}
+
+.menu ul li {
+    position: relative;
+    margin-right: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.menu ul li:hover > ul {
+    display: block;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: #FFF; /* Màu chữ của các mục menu */
+    transition: color 0.3s ease; /* Hiệu ứng khi chuyển đổi màu sắc */
+}
+
+.menu ul a:hover {
+    color: #ff0000; /* Màu chữ khi di chuột qua */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Màu nền của submenu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+    padding: 10px;
+    top: 100%; /* Hiển thị các mục con bên dưới */
+    left: 0;
+}
+
+.menu ul li:hover .submenu {
+    display: block; /* Hiển thị submenu khi di chuột qua */
+}
+
+.submenu li {
+    margin: 5px 0; /* Khoảng cách giữa các mục trong submenu */
+}
+
+.submenu a {
+    color: #333; /* Màu chữ của submenu */
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    color: #ff0000; /* Màu chữ khi di chuột qua */
+}
+
+
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    animation: slide-animation 10s infinite;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide-animation {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+
+/* CSS cho header */
+/* Bổ sung các quy tắc CSS cho header tại đây */
+
+/* CSS cho product container */
+.product-container {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* CSS cho filter và sort */
+.filter-sort {
+    margin-bottom: 20px;
+    /* Bổ sung các quy tắc CSS cho filter và sort tại đây */
+}
+
+/* CSS cho danh sách sản phẩm */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    /* Bổ sung các quy tắc CSS cho danh sách sản phẩm tại đây */
+}
+/* CSS cho header */
+/* Bổ sung các quy tắc CSS cho header tại đây */
+
+/* CSS cho product info */
+.product-info {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    /* Bổ sung các quy tắc CSS cho product info tại đây */
+}
+
+/* CSS cho product detail */
+.product-detail {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    /* Bổ sung các quy tắc CSS cho product detail tại đây */
+}
+
+/* CSS cho product same category */
+.product-same-category {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    /* Bổ sung các quy tắc CSS cho product same category tại đây */
+}
+/* CSS cho header */
+/* Bổ sung các quy tắc CSS cho header tại đây */
+
+/* CSS cho contact map */
+.contact-map {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    /* Bổ sung các quy tắc CSS cho contact map tại đây */
+}
+.menu ul ul {
+    display: none; /* Ẩn danh sách con ban đầu */
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    top: 100%; /* Đặt vị trí bắt đầu của danh sách con */
+    left: 0;
+    background-color: #333; /* Màu nền của danh sách con */
+    padding: 10px;
+    border-radius: 5px; /* Bo tròn các góc */
+    z-index: 1; /* Tạo lớp trên cùng để phần tử này được hiển thị trên phần tử khác */
+    white-space: nowrap; /* Đảm bảo các mục con sẽ hiển thị trên cùng trên một hàng */
+}
+
+
+.menu ul ul li {
+    margin-right: 0; /* Không có khoảng cách phía bên phải của mỗi mục */
+}
+
+.menu ul ul li a {
+    padding: 8px 15px; /* Điều chỉnh kích thước lề trong của mỗi mục */
+    color: #fff; /* Màu chữ của mục menu */
+    text-decoration: none; /* Loại bỏ gạch chân của các liên kết */
+}
+
+.menu ul ul li:hover > a {
+    color: #ff5733; /* Màu chữ khi rê chuột qua mục menu */
+}
+
+.menu ul li:hover > .submenu {
+    display: block; /* Hiển thị submenu khi rê chuột qua mục cha */
+}
+.product-new {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    margin-top: 10px;
+}
+
+.product-item p {
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #e5472d;
+}
+.product-sale {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-sale h2 {
+    color: #ff5733;
+}
+
+.product-sale .product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-sale .product-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+.product-sale .product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-sale .product-item h3 {
+    margin-top: 10px;
+}
+
+.product-sale .product-item p {
+    margin: 10px 0;
+}
+
+.product-sale .product-item .price {
+    margin-bottom: 10px;
+}
+
+.product-sale .product-item .original-price {
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.product-sale .product-item button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-sale .product-item button:hover {
+    background-color: #e5472d;
+}
+.post-new {
+    text-align: center;
+    padding: 20px;
+}
+
+.post-new h2 {
+    color: #ff5733;
+}
+
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.post-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-details {
+    padding: 20px;
+}
+
+.post-details h3 {
+    margin-top: 0;
+}
+
+.post-details p {
+    margin-bottom: 15px;
+}
+
+.post-details .read-more {
+    display: inline-block;
+    background-color: #ff5733;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.post-details .read-more:hover {
+    background-color: #e5472d;
+}
+/* Phần chung cho footer */
+footer {
+    background-color: #111; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 50px 0; /* Khoảng cách lề bên trong */
+    font-family: Arial, sans-serif; /* Font chữ */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between; /* Căn đều các cột */
+    flex-wrap: wrap; /* Cho phép các cột chuyển xuống dưới nếu không đủ không gian */
+}
+
+.footer-col {
+    flex: 1; /* Cân đều kích thước của các cột */
+    margin-right: 30px; /* Khoảng cách giữa các cột */
+}
+
+.footer-col:last-child {
+    margin-right: 0; /* Không có khoảng cách bên phải ở cột cuối cùng */
+}
+
+/* Tiêu đề của các cột */
+.footer-col h4 {
+    color: #ff5733; /* Màu chữ tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới cùng của tiêu đề */
+}
+
+/* Đường dẫn và liên kết trong các cột */
+.footer-links {
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    padding: 0; /* Xóa khoảng cách lề trong */
+}
+
+.footer-links li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+}
+
+.footer-links a {
+    color: #bbb; /* Màu chữ của đường dẫn */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu khi di chuột qua */
+}
+
+.footer-links a:hover {
+    color: #fff; /* Màu chữ khi di chuột qua */
+}
+
+/* Thông tin liên hệ */
+.footer-contact {
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    padding: 0; /* Xóa khoảng cách lề trong */
+}
+
+.footer-contact li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+}
+
+.footer-contact i {
+    margin-right: 10px; /* Khoảng cách giữa biểu tượng và văn bản */
+}
+
+/* Mạng xã hội */
+.social-icons {
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    padding: 0; /* Xóa khoảng cách lề trong */
+    display: flex; /* Hiển thị các biểu tượng xã hội theo hàng ngang */
+}
+
+.social-icons li {
+    margin-right: 10px; /* Khoảng cách giữa các biểu tượng */
+}
+
+.social-icons a {
+    color: #bbb; /* Màu chữ của biểu tượng */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-size: 20px; /* Kích thước chữ */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu khi di chuột qua */
+}
+
+.social-icons a:hover {
+    color: #fff; /* Màu chữ khi di chuột qua */
+}
+
+/* Bản quyền */
+.copyright {
+    text-align: center; /* Căn giữa văn bản */
+    margin-top: 30px; /* Khoảng cách từ phần nội dung footer */
+    font-size: 14px; /* Kích thước chữ */
+    opacity: 0.8; /* Độ mờ */
+}
+/* Phần Filter và Sort */
+.filter-sort {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-sort label {
+    font-weight: bold;
+}
+
+.filter-sort select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Phần View */
+.filter-sort input[type="radio"] {
+    display: none;
+}
+
+.filter-sort input[type="radio"] + label {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-sort input[type="radio"]:checked + label {
+    background-color: #ff5733;
+    color: #fff;
+}
+
+/* Phần Product List */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-card p {
+    margin-top: 5px;
+    color: #777;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #ff5733;
+}
+
+.product-card button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #e64a19;
+}

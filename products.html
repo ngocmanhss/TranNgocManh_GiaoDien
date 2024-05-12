@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManhWeb</title>
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="/css/css/bootstrap.min.css"> 
+    <script src="css/js/bootstrap.bundle.min.js"> </script>
+    <link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
+   
+</head>
+<body>
+    <header>
+        <div class="logo-menu">
+            <div class="logo">
+                <a href="/index.html"><img src="/images/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">BỘ SƯU TẬP</a>
+                        <ul class="submenu">
+                            <li><a href="#">Premium</a></li>
+                            <li><a href="#">Cool Touch</a></li>
+                            <li><a href="#">Di Sản</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SALE CẤP TỐC</a></li>
+                    <li><a href="#">SALE PHỤ KIỆN</a></li>
+                    <li><a href="#">GIÁ LUÔN TỐT</a></li>
+                    <li><a href="#">MENU</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        <div class="login-cart-search">
+         
+            <button><i class="fa-solid fa-user"></i></button>
+            <button><i class="fa-solid fa-cart-shopping"></i></button>
+            <input type="text" placeholder="Search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+    <div class="filter-sort">
+        <label for="filter">Filter by:</label>
+        <select name="filter" id="filter">
+            <option value="price">Price</option>
+            <option value="name">Name</option>
+            <!-- Thêm các tùy chọn filter khác tại đây -->
+        </select>
+
+        <label for="sort">Sort by:</label>
+        <select name="sort" id="sort">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+            <!-- Thêm các tùy chọn sort khác tại đây -->
+        </select>
+
+        <label for="view">View:</label>
+        <input type="radio" name="view" id="list-view" value="list" checked>
+        <label for="list-view">List</label>
+        <input type="radio" name="view" id="grid-view" value="grid">
+        <label for="grid-view">Grid</label>
+    </div>
+
+    <div class="product-list">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="/images/product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <span class="price">$19.99</span>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="/images/product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <span class="price">$24.99</span>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="/images/product2.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>Description of Product 3</p>
+            <span class="price">$14.99</span>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Thêm các thẻ sản phẩm khác tại đây -->
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-col">
+                <h4>Về chúng tôi</h4>
+                <p>YAME là cửa hàng thời trang hàng đầu tại Việt Nam, chuyên cung cấp các sản phẩm thời trang phong phú và đa dạng từ các thương hiệu nổi tiếng trên thế giới.</p>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Danh mục</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Nam</a></li>
+                    <li><a href="#">Nữ</a></li>
+                    <li><a href="#">Trẻ em</a></li>
+                    <li><a href="#">Phụ kiện</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Liên hệ</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i>123 Đường ABC, Quận XYZ, TP.HCM</li>
+                    <li><i class="fas fa-phone"></i>+84 123 456 789</li>
+                    <li><i class="fas fa-envelope"></i>info@yame.vn</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024. Bản quyền thuộc về Công ty YAME.</p>
+        </div>
+    </footer>
+</body>
+</html>

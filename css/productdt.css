@@ -1,0 +1,97 @@
+/* Định dạng phần tử container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Định dạng phần tử product-detail */
+.product-detail {
+    display: flex;
+}
+
+/* Định dạng phần tử product-images */
+.product-images {
+    margin-right: 20px;
+}
+
+/* Định dạng phần tử main-image */
+/* Định dạng phần tử main-image */
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng phần tử additional-images img */
+.additional-images img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
+}
+
+/* Hiệu ứng khi di chuột qua hoặc tập trung vào các ảnh phụ */
+.additional-images img:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Phóng to hình ảnh khi di chuột qua */
+}
+
+/* Định dạng phần tử additional-images img */
+.additional-images img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
+}
+
+/* Hiệu ứng khi di chuột qua hoặc tập trung vào các ảnh phụ */
+.additional-images img:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Phóng to hình ảnh khi di chuột qua */
+}
+
+/* Thay đổi ảnh chính khi di chuột vào ảnh phụ */
+.additional-images img:hover ~ .main-image img {
+    opacity: 0; /* Ẩn ảnh chính */
+}
+
+.additional-images img:hover ~ .main-image img:hover {
+    opacity: 1; /* Hiển thị ảnh phụ khi di chuột qua */
+}
+
+
+/* Định dạng phần tử product-description */
+.product-description {
+    flex: 1;
+}
+
+/* Định dạng phần tử product-description h2 */
+.product-description h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Định dạng phần tử product-description ul */
+.product-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Định dạng phần tử product-description li */
+.product-description ul li {
+    margin-bottom: 5px;
+}
+
+/* Định dạng phần tử product-description li strong */
+.product-description ul li strong {
+    margin-right: 5px;
+    font-weight: bold;
+}
